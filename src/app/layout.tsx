@@ -17,9 +17,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={`${poppins.variable} font-poppins bg-gray-50 dark:bg-slate-700 min-h-screen`}>
         <ThemeProvider>
           <div className="flex">
-            <Sidebar />
-            <div className="ml-64 w-full">
+            <div className="lg:ml-64 w-full">
               <Header />
+              <Sidebar />
               <main className="p-6">{children}</main>
             </div>
           </div>
